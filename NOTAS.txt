@@ -1,0 +1,41 @@
+https://www.youtube.com/watch?v=iyHt8Ew-l6U
+
+
+CREAR PROYECTO
+	composer create-project laravel/laravel agenda
+	php artisan migrate
+
+
+INSTALAR BOOTSTRAP Y LOGIN	
+	composer require laravel/ui
+	php artisan ui bootstrap --auth
+	npm install
+	npm run dev
+
+NUESTRO CALENDARIO SE VA A BASAR EN UNA TABLA
+	php artisan make:model Evento -mcr Aqui creamos el modelo, la migracion, el controlador y el recurso
+
+INTALACION DE FULL CALENDAR
+	nos vamos a la url del CDN = https://www.jsdelivr.com/package/npm/fullcalendar
+
+	<!-- CDN FULL CALENDAR, esto lo agregue en la vista del layout -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.0/locales-all.js"></script>
+
+	<!-- ARCHIVO JS QUE CREE -->
+    <script src="{{ asset('js/agenda.js') }}" defer></script>
+
+
+
+CREANDO VISTA DEL CALENDARIO
+	Creamos la vista Evento
+	index.blade.php
+
+	
+	
+
+
+
+
+	
