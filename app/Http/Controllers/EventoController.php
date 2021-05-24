@@ -15,7 +15,7 @@ class EventoController extends Controller
     public function index()
     {
         //llamamos a la vista
-        return view('evento'.index);
+        return view('evento.index');
     }
 
     /**
